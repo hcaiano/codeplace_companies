@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Weekly Website Visits Widget | SimilarWeb</title>
+  <meta name="robots" content="noindex,follow" />
+  <link href='//fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css' />
+  <link href="/Css/bundles/traffic.css?v=mpmkrq15ZFm-M-XuUpXdxj59CrZ0ULks1AOc_vosXI01" rel="stylesheet" />
+  <!-- Start Visual Website Optimizer Asynchronous Code -->
+  <script type='text/javascript'>
+  var _vwo_code = (function() {
+    var account_id = 48102,
+      settings_tolerance = 2000,
+      library_tolerance = 2500,
+      use_existing_jquery = false,
+      // DO NOT EDIT BELOW THIS LINE
+      f = false,
+      d = document;
+    return {
+      use_existing_jquery: function() {
+        return use_existing_jquery;
+      },
+      library_tolerance: function() {
+        return library_tolerance;
+      },
+      finish: function() {
+        if (!f) {
+          f = true;
+          var a = d.getElementById('_vis_opt_path_hides');
+          if (a) a.parentNode.removeChild(a);
+        }
+      },
+      finished: function() {
+        return f;
+      },
+      load: function(a) {
+        var b = d.createElement('script');
+        b.src = a;
+        b.type = 'text/javascript';
+        b.innerText;
+        b.onerror = function() {
+          _vwo_code.finish();
+        };
+        d.getElementsByTagName('head')[0].appendChild(b);
+      },
+      init: function() {
+        settings_timer = setTimeout('_vwo_code.finish()', settings_tolerance);
+        this.load('//dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&r=' + Math.random());
+        var a = d.createElement('style'),
+          b = 'body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',
+          h = d.getElementsByTagName('head')[0];
+        a.setAttribute('id', '_vis_opt_path_hides');
+        a.setAttribute('type', 'text/css');
+        if (a.styleSheet) a.styleSheet.cssText = b;
+        else a.appendChild(d.createTextNode(b));
+        h.appendChild(a);
+        return settings_timer;
+      }
+    };
+  }());
+  _vwo_settings_timer = _vwo_code.init();
+  </script>
+  <!-- End Visual Website Optimizer Asynchronous Code -->
+</head>
+
+<body>
+  <div class="widget">
+    <div class="powered-by">
+      <a class="logo" target="_blank" href="//www.similarweb.com/">
+        <span>SimilarWeb</span>
+      </a>
+    </div>
+    <a class="js-site-info widget-wrapper" rel="nofollow" target="_blank" data-href="//www.similarweb.com/website/{{url}}?utm_source={{referrer}}&utm_medium=TrafficWidget&utm_campaign=mb_TrafficWidget_{{referrer}}" href="//www.similarweb.com">
+      <div class="header">
+        <h1>Website Visits</h1>
+      </div>
+      <div class="chart-top-sep"></div>
+      <div id="chart" class="chart">
+      </div>
+    </a>
+    <div class="promo">
+      <a class="hookLink  js-promo-link" rel="nofollow" target="_blank" href="//www.similarweb.com/website/codeplace.com">See More Traffic Stats</a>
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  if (typeof jQuery === 'undefined') {
+    document.write(unescape("%3Cscript src='/scripts/vendor/jquery-1.9.1/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+  </script>
+  <script src="/Js/bundles/traffic.js?v=w0Pu1U8lyIuuNBDKw5riqGIvnJEiLf_mEnyomniZG_M1"></script>
+  <script type="text/javascript">
+  $(function() {
+    var data = [{
+      "name": "codeplace.com",
+      "data": {
+        "2015-12-01": 13883.016361457416,
+        "2016-01-01": 10792.166055988233,
+        "2016-02-01": 51302.306629830258,
+        "2016-03-01": 50174.907543233952,
+        "2016-04-01": 69102.5734151778,
+        "2016-05-01": 79245.564218675689
+      }
+    }];
+    new TrafficWidget($('.widget')).init({
+      data: data,
+      percentage: false
+    });
+  });
+  </script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42469261-1']);
+  _gaq.push(['_setDomainName', 'similarweb.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+</body>
+
+</html>

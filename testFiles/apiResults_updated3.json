@@ -1,0 +1,62 @@
+{
+  "ga_connected": false,
+  "report_url": "/results/e70b4e56-cfd3-4708-b015-a85e7440d1bf",
+  "blog": {
+    "url": "codeplace.com/blog",
+    "original_url": "codeplace.com/blog",
+    "domain_url": "codeplace.com",
+    "has_wordpress": false,
+    "has_ga": false,
+    "average_shares_per_month": 1.6,
+    "report_uuid": "e70b4e56-cfd3-4708-b015-a85e7440d1bf",
+    "shares_by_percentage": {
+      "twitter_shares": 52.6,
+      "facebook_shares": 47.4,
+      "linkedin_shares": 0,
+      "googleplus_shares": 0,
+      "pinterest_shares": 0
+    }
+  },
+  "posts": [
+    {
+      "url": "http://www.codeplace.com/blog/2016/05/27/the-end-of-the-developer-unicorn/",
+      "title": "The end of the developer unicorn",
+      "author_name": "Inês Martins",
+      "published_at": "May 27, 2016",
+      "facebook_shares": 0,
+      "linkedin_shares": 0,
+      "twitter_shares": 1,
+      "pinterest_shares": 0,
+      "googleplus_shares": 0,
+      "total_shares": 1
+    },
+    {
+      "url": "http://www.codeplace.com/blog/p/20396ca1-5a54-4243-9939-3b93e781157b/",
+      "title": "Come meet us at the Pioneers500!",
+      "author_name": "Inês Martins",
+      "published_at": "May 13, 2016",
+      "facebook_shares": 2,
+      "linkedin_shares": 0,
+      "twitter_shares": 1,
+      "pinterest_shares": 0,
+      "googleplus_shares": 0,
+      "total_shares": 3
+    },
+    {
+      "url": "http://www.codeplace.com/blog/2016/05/03/introduction-to-git/",
+      "title": "Introduction to Git",
+      "author_name": "Inês Martins",
+      "published_at": "May  3, 2016",
+      "facebook_shares": 7,
+      "linkedin_shares": 0,
+      "twitter_shares": 8,
+      "pinterest_shares": 0,
+      "googleplus_shares": 0,
+      "total_shares": 15
+    }
+  ],
+  "values": {
+    "advertising": 0.011,
+    "codeplace": 0.225
+  }
+}

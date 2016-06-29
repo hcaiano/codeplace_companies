@@ -1,0 +1,459 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeplace</title>
+    <link rel='shortcut icon' type='image/x-icon' href='http://i.imgur.com/I6dh5Ln.png' />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Raleway:300,500,600,800|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+
+  <body>
+    <script src="assets/js/app.js"></script>
+    <section class="results-alert" id="js-ga-div-connected" style="display:none">
+      <div class="success callout text-center" data-closable="slide-out-right">
+        <p>We're generating a customized report based on your blog analytics. We'll send you an email with the results shortly.</p>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </section>
+    <section class="no-data-alert" id="js-no-data-alert" style="display:none">
+      <div class="alert callout text-center" data-closable>
+        <p>We were unable to collect data for the submitted url.</p>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </section>
+    
+    <header class="writers-navigation" id="js-page-top">
+      <div class="expanded row">
+        <nav>
+          <div class="top-bar-left">
+            <ul class="no-bullet">
+              <li><img src="assets/img/logos/codeplace_writers.svg" alt=""></li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="no-bullet">
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+    
+    <section id="js-header-blog" class="writer-url">
+      <div class="row">
+        <div class="small-12 medium-8 large-8 medium-offset-2 large-offset-2 columns">
+          <h1 class="title text-center">
+            Know how much your blog is worth
+          </h1>
+          <form id="blogForm">
+            <div class="input-group">
+              <input class="input-group-field" type="url" />
+              <div class="input-group-button">
+                <img id="progress-icon" class="spinner-icon" src="assets/img/progress.gif" style="display:none" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <div id="js-content-div" style="display:none">
+      <section class="writers-metrics page-wrapper" id="js-results-section">
+        <div class="row align-middle">
+          <div class="medium-12 columns">
+            <h2 class="text-center global-title text-darker-gray">
+              Average Metrics p/ Month
+            </h2>
+          </div>
+          <div class="small-12 medium-6 large-6 columns">
+            <div class="wrapper">
+              <h2 class="small-title text-center">
+                <span class="blue circle"></span>
+                Engagement
+                <hr>
+              </h2>
+              <p class="values text-center">
+                <span id="js-engagement-value" class="numbers-font"></span>
+                <span class="sub-title">Social Shares</span>
+              </p>
+              <div class="social-metrics">
+                <div class="row social-facebook">
+                  <div class="medium-2 small-3 columns">
+                    <div class="social-network">Facebook</div>
+                  </div>
+                  <div class="medium-10 small-9 columns">
+                    <div class="progress numbers-font" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+                      <span class="progress-meter">
+                        <span class="progress-meter-text"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row social-linkedin">
+                  <div class="medium-2 small-3 columns">
+                   <div class="social-network">LinkedIn</div>
+                  </div>
+                  <div class="medium-10 small-9 columns">
+                    <div class="progress numbers-font" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+                      <span class="progress-meter">
+                        <span class="progress-meter-text"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row social-twitter">
+                  <div class="medium-2 small-3 columns">
+                    <div class="social-network">Twitter</div>
+                  </div>
+                  <div class="medium-10 small-9 columns">
+                    <div class="progress numbers-font" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+                      <span class="progress-meter">
+                        <span class="progress-meter-text"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row social-google">
+                  <div class="medium-2 small-3 columns">
+                    <div class="social-network">Google+</div>
+                  </div>
+                  <div class="medium-10 small-9 columns">
+                    <div class="progress numbers-font" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+                      <span class="progress-meter">
+                       <span class="progress-meter-text"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row social-other">
+                  <div class="medium-2 small-3 columns">
+                    <div class="social-network">Other</div>
+                  </div>
+                  <div class="medium-10 small-9 columns">
+                    <div class="progress numbers-font" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+                      <span class="progress-meter">
+                       <span class="progress-meter-text"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-6 columns">
+            <div class="wrapper">
+              <h2 class="small-title text-center">
+                <span class="green circle"></span>
+                Audience
+                <hr>
+              </h2>
+              <p class="values text-center">
+                <span id="js-smw-audience-value" class="numbers-font"></span>
+               <span class="sub-title">Page Views</span>
+              </p>
+              <div class="smw-widget-wrapper">
+                <iframe id="js-smw-results" frameborder="0" width="100%" height="175" style="border: solid 1px #D7D7D7;"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="writers-results page-wrapper">
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns">
+            <h2 class="text-center global-title text-white">
+                How Much Your Blog Is Worth p/ Month
+              </h2>
+            <div class="slider-wrapper">
+              <p class="info">
+                <span id="js-url-blog" class="url text-success"></span>
+                <span id="js-views" class="views numbers-font text-white"></span>
+                <span class="small-label text-white">
+                  (avg. p/ month)
+                </span>
+              </p>
+              <div class="slider" data-slider data-end="1000000">
+                <span class="slider-handle" data-slider-handle role="slider" tabindex="100"></span>
+                <span class="slider-fill" data-slider-fill></span>
+                <input id="slider-value" type="hidden">
+              </div>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-6 columns">
+            <div class="wrapper border-red">
+              <h2 class="small-title text-center">
+                <span class="red circle"></span>
+                Advertising
+                <hr>
+              </h2>
+              <div class="values text-center">
+                <span id="js-advertising-value" class="numbers-font"></span>
+                <span class="text-alert asterisk">*</span>
+                <div class="sub-title red">
+                  <span id="js-ad-value-label" class="numbers-font"></span>
+                </div>
+              </div>
+            </div>
+            <div class="additional-info">
+              <span class="text-alert">*</span> Estimated revenue you can get with Ads based on total views <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="Estimation is based on the following considerations: CTR = 1.50% ; CPC = $1.00 ; Adsense commission = 68% ; CPM = $1.25"><i class="nc-icon-mini ui-e_round-e-help"></i></span>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-6 columns">
+            <div class="wrapper border-green">
+              <h2 class="small-title text-center">
+                <span class="green circle"></span>
+                Licensing
+                <hr>
+              </h2>
+              <div class="values text-center">
+                <span id="js-codeplace-value" class="numbers-font"></span>
+                <span class="text-success asterisk">*</span>
+                <div class="sub-title green">
+                  <span id="js-cp-value-label" class="numbers-font"></span>
+                </div>
+              </div>
+            </div>
+            <div class="additional-info">
+              <span class="text-success">*</span> Estimated revenue you can get with Codeplace Content Licensing based on total views
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="posts page-wrapper" id="js-posts-section">
+        <div class="medium-12 columns">
+          <h2 class="text-center global-title text-darker-gray">
+              Want to know how much you can make from each of your blog posts?
+            </h2>
+        </div>
+        <div class="row">
+          <div class="small-6 medium-5 columns">
+            <div class="wrapper">
+              <span>Blog Post Details</span>
+            </div>
+          </div>
+          <div class="medium-1 columns hide-for-small-only">
+            <div class="wrapper">
+              <span>FACEBOOK SHARES</span>
+            </div>
+          </div>
+          <div class="medium-1 columns hide-for-small-only">
+            <div class="wrapper">
+              <span>LINKEDIN SHARES</span>
+            </div>
+          </div>
+          <div class="medium-1 columns hide-for-small-only">
+            <div class="wrapper">
+              <span>TWITTER SHARES</span>
+            </div>
+          </div>
+          <div class="medium-1 columns hide-for-small-only">
+            <div class="wrapper">
+              <span>GOOGLE+ SHARES</span>
+            </div>
+          </div>
+          <div class="small-2 medium-1 columns">
+            <div class="wrapper">
+              <span>TOTAL SHARES</span>
+            </div>
+          </div>
+          <div class="small-2 medium-1 columns">
+            <div class="wrapper">
+              <span>PAGE VIEWS</span>
+            </div>
+          </div>
+          <div class="small-2 medium-1 columns">
+            <div class="wrapper">
+              <span>POTENTIAL REVENUE</span>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div id="post1" class="row align-middle post-row">
+          <div class="small-6 medium-5 columns">
+            <div class="wrapper">
+              <a class="post-url" href="#">
+                <p><b class="post-title"></b></p>
+              </a>
+              <div class="post-url-information">by <span class="post-author-name"></span> - <span class="post-published-at"></span></div>
+            </div>
+          </div>
+          <div class="medium-1 hide-for-small-only columns">
+            <div class="wrapper">
+              <span class="post-fb-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="medium-1 hide-for-small-only columns">
+            <div class="wrapper">
+              <span class="post-li-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="medium-1 hide-for-small-only columns">
+            <div class="wrapper">
+              <span class="post-tw-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="medium-1 hide-for-small-only columns">
+            <div class="wrapper">
+              <span class="post-gp-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="small-2 medium-1 columns">
+            <div class="wrapper">
+              <span class="post-tt-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="small-2 medium-1 columns">
+            <div class="wrapper">
+              <span class="post-views numbers-font">?</span>
+            </div>
+          </div>
+          <div class="small-2 medium-1 columns">
+            <div class="wrapper">
+              <span class="post-revenue numbers-font">?</span>
+            </div>
+          </div>
+        </div>
+        <div id="post2" class="row align-middle post-row">
+          <div class="small-6 medium-5 columns">
+            <div class="wrapper">
+              <a class="post-url" href="#">
+                <p><b class="post-title"></b></p>
+              </a>
+              <div class="post-url-information">by <span class="post-author-name"></span> - <span class="post-published-at"></span></div>
+            </div>
+          </div>
+          <div class="medium-1 hide-for-small-only columns">
+            <div class="wrapper">
+              <span class="post-fb-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="medium-1 hide-for-small-only columns">
+            <div class="wrapper">
+              <span class="post-li-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="medium-1 hide-for-small-only columns">
+            <div class="wrapper">
+              <span class="post-tw-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="medium-1 hide-for-small-only columns">
+            <div class="wrapper">
+              <span class="post-gp-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="small-2 medium-1 columns">
+            <div class="wrapper">
+              <span class="post-tt-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="small-2 medium-1 columns">
+            <div class="wrapper">
+              <span class="post-views numbers-font">?</span>
+            </div>
+          </div>
+          <div class="small-2 medium-1 columns">
+            <div class="wrapper">
+              <span class="post-revenue numbers-font">?</span>
+            </div>
+          </div>
+        </div>
+        <div id="post3" class="row align-middle post-row">
+          <div class="small-6 medium-5 columns">
+            <div class="wrapper">
+              <a class="post-url" href="#">
+                <p><b class="post-title"></b></p>
+              </a>
+              <div class="post-url-information">by <span class="post-author-name"></span> - <span class="post-published-at"></span></div>
+            </div>
+          </div>
+          <div class="medium-1 hide-for-small-only columns">
+            <div class="wrapper">
+              <span class="post-fb-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="medium-1 hide-for-small-only columns">
+            <div class="wrapper">
+              <span class="post-li-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="medium-1 hide-for-small-only columns">
+            <div class="wrapper">
+              <span class="post-tw-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="medium-1 hide-for-small-only columns">
+            <div class="wrapper">
+              <span class="post-gp-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="small-2 medium-1 columns">
+            <div class="wrapper">
+              <span class="post-tt-shares numbers-font"></span>
+            </div>
+          </div>
+          <div class="small-2 medium-1 columns">
+            <div class="wrapper">
+              <span class="post-views numbers-font">?</span>
+            </div>
+          </div>
+          <div class="small-2 medium-1 columns">
+            <div class="wrapper">
+              <span class="post-revenue numbers-font">?</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="js-ga-section" class="page-wrapper get-report">
+        <div id="js-ga-div-not-connected" class="row" style="display:none">
+          <div class="small-12 medium-12 large-12 text-center columns">
+            <h2 class="text-center global-title">Connect with Google Analytics to receive a detailed report</h2>
+            <a id="js-ga-link" class="large alert button rounded">Connect with Google Analytics</a>
+          </div>
+        </div>
+        <div id="js-ga-div-error" class="row" style="display:none">
+          <div class="small-12 medium-8 large-8 medium-offset-3 large-offset-3 text-center columns">
+            <h3 id="js-error-message"></h3>
+          </div>
+        </div>
+      </section>
+      
+      <section class="get-email">
+        <div class="row">
+          <div class="small-12 medium-8 large-8 medium-offset-2 large-offset-2 columns">
+            <h2 class="text-center global-title">
+                Want to know more about being a Codeplace writer?
+              </h2>
+            <form id="emailForm">
+              <div class="input-group">
+                <input id="js-input-email" class="input-group-field" type="text" placeholder="Enter your email here" />
+                <div class="input-group-button">
+                  <input id="js-email-button" type="submit" class="button" value="GET STARTED" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+    <script type="text/javascript">
+    $(results)
+    </script>
+    
+    <script type="text/javascript">$(foundation)</script>
+  </body>
+</html>
