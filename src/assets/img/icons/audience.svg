@@ -1,0 +1,13 @@
+<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48">
+<g transform="translate(0, 0)">
+<path data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M24,11
+	c0-4.971,4.029-9,9-9s9,4.029,9,9s-4.029,11-9,11S24,15.971,24,11z" stroke-linejoin="miter"></path>
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-miterlimit="10" d="M26,27.968
+	C27.905,27.398,30.227,27,33,27c4.986,0,8.258,1.286,10.273,2.553c1.719,1.082,2.727,3,2.727,5.031V46H33" stroke-linejoin="miter" stroke-linecap="butt"></path>
+<path fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M6,23c0-4.418,3.582-8,8-8
+	s8,3.582,8,8s-3.582,9-8,9S6,27.418,6,23z" stroke-linejoin="miter"></path>
+<path fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M26,42.494
+	c0-1.628-0.977-3.1-2.488-3.705C21.432,37.957,18.141,37,14,37s-7.432,0.957-9.512,1.789C2.977,39.394,2,40.867,2,42.494V46h24
+	V42.494z" stroke-linejoin="miter"></path>
+</g>
+</svg>

@@ -39,15 +39,15 @@ textarea {
 }
 
 .callout.alert {
-    background-color: $alert-color !important;
-    color: $white !important;
-    font-weight: 600;
-    p {
-      margin: 0;
-    }
-    .close-button {
-      color: $white;
-    }
+  background-color: $alert-color !important;
+  color: $white !important;
+  font-weight: 600;
+  p {
+    margin: 0;
+  }
+  .close-button {
+    color: $white;
+  }
 }
 
 .callout {
@@ -68,11 +68,13 @@ body {
 }
 
 .global-title {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 800;
   padding: 0;
   display: block;
   line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: -0.8px;
 }
 
 .global-subtitle {
@@ -123,6 +125,13 @@ body {
 
 .text-success {
   color: $success-color;
+}
+
+
+/****** Backgrounds *********/
+
+.gray-bg {
+  background-color: $light-gray;
 }
 
 
@@ -386,32 +395,59 @@ body {
 
 /****** Writers Landing *********/
 
+.landing-modal-form {
+  height: 750px !important;
+  overflow: hidden;
+}
+
 .landing-hero {
-  background: url(../img/backgrounds/landing.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 7rem 0;
+  background-color: $primary-color;
+  padding: 9rem 0 8rem 0;
   @include breakpoint(small only) {
     padding: 3rem 0;
   }
+  input {
+    margin-bottom: 10px !important;
+  }
+  label {
+    display: block;
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.8;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+  }
   .tagline {
     color: white;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1;
     text-align: center;
-    font-size: 2.4rem;
-    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: -0.7px;
     @include breakpoint(small only) {
       text-align: left;
     }
   }
+  .button.success {
+    background-color: #4FD374;
+    color: #fefefe;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    padding: 1rem 3.5rem;
+  }
   .subtitle {
     color: white;
-    font-size: 1.375rem;
+    font-size: 2rem;
     text-align: center;
+    line-height: 1.5;
     font-weight: 300;
-    margin: 0.875rem 0 4.7rem 0;
+    margin: 0.875rem 0 1rem 0;
     @include breakpoint(small only) {
       text-align: left;
     }
@@ -445,9 +481,10 @@ body {
   [type='url'],
   [type='color'],
   textarea {
-    height: rem-calc(60) !important;
-    padding: 1.3rem !important;
+    height: 2.85rem !important;
+    padding: 0.7rem !important;
     font-size: 1.1rem;
+    font-weight: 500;
   }
   form {
     position: relative;
@@ -509,7 +546,7 @@ body {
     margin-top: rem-calc(25);
   }
   .information {
-    font-size: rem-calc(18);
+    font-size: 1rem;
     line-height: 1.7;
     margin-top: rem-calc(14);
     font-weight: 100;
@@ -517,7 +554,46 @@ body {
   }
 }
 
+.pricing-wrapper {
+  background-color: #fefefe;
+  text-align: center;
+  border: 1px solid #c1c9da;
+  box-shadow: 0px 1px 2px 0px rgba(231, 231, 231, 0.96);
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      border-top: 1px solid #e9f0ff;
+      list-style: none;
+      font-size: 0.9rem;
+      padding: 0.8rem 0;
+    }
+  }
+  h5 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #d0d0d0;
+    padding-top: 2.5rem;
+    letter-spacing: -0.2px;
+  }
+  h3 {
+    font-size: 5rem;
+    color: #4282ca;
+    line-height: 1;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  p {
+        padding-bottom: 1.5rem;
+    font-weight: 700;
+  }
+}
+
 .what-we-do {
+  .wrapper {
+    padding: 5rem 0;
+  }
   .button {
     padding: 15px 20px !important;
     font-size: 12px !important;
@@ -554,13 +630,9 @@ body {
     font-size: rem-calc(18);
     line-height: 1.8;
   }
-  .first-wrapper {
-    margin-bottom: rem-calc(110);
-  }
 }
 
 .who {
-  background-color: $light-gray;
   padding: 7rem 0;
   @include breakpoint(small only) {
     text-align: center;
@@ -577,7 +649,9 @@ body {
     margin-top: rem-calc(24);
   }
   img {
-    margin-top: rem-calc(140);
+    margin-top: 7.5rem;
+    height: 40px;
+    width: auto;
     @include breakpoint(small only) {
       margin-top: 4rem;
     }
@@ -807,22 +881,25 @@ body {
 }
 
 .no-data {
-    background: transparent;
-    padding-top: 6rem;
-    z-index: 0;
-    position: relative;
-    margin-top: 0;
-    width: 100%;
+  background: transparent;
+  padding-top: 6rem;
+  z-index: 0;
+  position: relative;
+  margin-top: 0;
+  width: 100%;
 }
 
 
 /****** Writers Navigation *********/
 
 .writers-navigation {
-  background-color: $primary-color;
-  padding: rem-calc(20);
-  border-bottom: 1px solid lighten($primary-color, 2);
+  padding: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   height: 65px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
   ul {
     margin-bottom: 0;
   }

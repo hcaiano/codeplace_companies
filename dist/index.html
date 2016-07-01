@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codeplace</title>
     <link rel='shortcut icon' type='image/x-icon' href='http://i.imgur.com/I6dh5Ln.png' />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Raleway:300,500,600,800|Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Poppins:400,300,500,600,700" rel="stylesheet">
+    <script src="https://pipedrivewebforms.com/webforms.min.js"></script>
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
-
+  <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
   <body>
     <script src="assets/js/app.js"></script>
     <header class="writers-navigation" id="js-page-top">
@@ -33,41 +34,34 @@
     <!-- /header -->
     
     <section class="landing-hero page-wrapper">
-      <div class="row">
-        <div class="small-12 medium-10 large-10 medium-offset-1 large-offset-1 columns">
+      <div class="row align-middle">
+        <div class="small-8 small-offset-2 columns text-center">
           <h1 class="tagline">
-           Show off your tech writing skills and get paid for it
+           tech blogging as a service
           </h1>
-          <h2 class="subtitle secondary-font">
-           We connect awesome companies in need of tech content with great bloggers.
+          <h2 class="subtitle">
+           You tell us who's your target customer. We’ll take care of your blog. That simple!
           </h2>
-          <div class="url-wrapper">
-            <h2 class="url-title">
-            Want to know how much your blog is worth?
-            </h2>
-            <form id="blogFormLanding">
-              <div class="input-group">
-                <input class="input-group-field" type="url" value="http://" />
-                <div class="input-group-button">
-                  <input type="submit" class="success button" value="SHOW ME THE $$" />
-                </div>
-              </div>
-            </form>
-          </div>
+          <a data-open="modal-form" type="button" class="success button">Talk to us</a>
         </div>
       </div>
     </section>
+    
+    
+    <div class="reveal landing-modal-form" id="modal-form" data-reveal>
+    <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/ec66e595a870a0f4d62ceff24b317c59"><script src="https://pipedrivewebforms.com/webforms.min.js"></script></div>
+    </div>
     
     <section class="how-it-works page-wrapper">
       <div class="row">
         <div class="small-12 columns">
           <h2 class="text-center global-title text-darker-gray">
-            Get published, get exposure, get paid
+            Our Process
           </h2>
         </div>
         <div class="small-12 columns">
           <h3 class="text-center global-subtitle text-dark-gray secondary-font">
-            Work with the best companies to share content tech lovers want to read
+            We work hard to find content that's perfect for your current and future audience.
           </h3>
         </div>
         <div class="medium-4 columns">
@@ -75,12 +69,12 @@
             <h6 class="step">
               Step 1
             </h6>
-            <img src="assets/img/icons/how-1.svg" alt="">
+            <img src="assets/img/icons/audience.svg" alt="">
             <h3 class="title">
-              Companies Notice You
+              Tell us who your audience is.
             </h3>
             <p class="information secondary-font text-dark-gray">
-              Tech companies digg what you’re writing
+              eg: Are your customers project managers or developers?
             </p>
           </div>
         </div>
@@ -89,12 +83,12 @@
             <h6 class="step">
               Step 2
             </h6>
-            <img src="assets/img/icons/how-2.svg" alt="">
+            <img src="assets/img/icons/marketing.svg" alt="">
             <h3 class="title">
-              Create/License Posts
+              We'll define the right content marketing strategy.
             </h3>
             <p class="information secondary-font text-dark-gray">
-              Write original content or license one of your posts
+              eg: We should be producing more posts about devops
             </p>
           </div>
         </div>
@@ -103,61 +97,48 @@
             <h6 class="step">
               Step 3
             </h6>
-            <img src="assets/img/icons/how-3.svg" alt="">
+            <img src="assets/img/icons/investment.svg" alt="">
             <h3 class="title">
-              Get Paid
+              Measure and Optimise your Content ROI
             </h3>
             <p class="information secondary-font text-dark-gray">
-              You get paid + your articles are featured on top tech blogs
+              eg: Are these visitors converting into signups?
             </p>
           </div>
         </div>
       </div>
     </section>
     
-    <section class="what-we-do page-wrapper">
+    <section class="what-we-do">
       <div class="wrapper first-wrapper">
         <div class="row align-middle">
-          <div class="medium-6 small-12 columns">
+          <div class="medium-7 small-12 columns">
             <div class="content-box">
               <h6 class="title">
                 <img src="assets/img/icons/licensing.svg" alt="">
-                Licensing Existing Content
+                Our Pricing
               </h6>
               <h2 class="heading">
-                Monetize your blog posts (without terrible banner ads)
+                Why should you pay for content that doesn't bring traffic?
               </h2>
               <hr>
               <p class="information secondary-font">
-                Codeplace offers different licensing models, tailored to the needs of the company and the blogger. All of them work under the same premisse: you have awesome posts that tech enthusiasts love to read, companies want to feature them on their blog.
+                Typical content marketing agencies charge you 1000s of $s in flat fees and production comissions for content that is unproven to convert into visitors. We don't think that's fair. With Codeplace, you only pay when you get traffic.
               </p>
-              <button class="hollow button rounded" id="js-slide-to-form" href="#" type="button">KNOW HOW MUCH YOU CAN EARN</button>
+              <button class="hollow button" data-open="modal-form" type="button">KNOW MORE</button>
             </div>
           </div>
-          <div class="medium-6 small-12 columns hide-for-small-only">
-            <img src="assets/img/screenshots/licensing.jpg" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="row align-middle">
-          <div class="medium-6 small-12 columns hide-for-small-only">
-            <img src="assets/img/screenshots/original.jpg" alt="">
-          </div>
-          <div class="medium-6 small-12 columns">
-            <div class="content-box">
-              <h6 class="title">
-                <img src="assets/img/icons/original.svg" alt="">
-                ORIGINAL CONTENT
-              </h6>
-              <h2 class="heading">
-                Write original posts
-              </h2>
-              <hr>
-              <p class="information secondary-font">
-                This means showing off your tech writing skills <em>plus</em> getting published on the blogs of some of the best companies in the world.
-              </p>
-              <!-- <button class="hollow button rounded" data-open="apply-modal" href="#">APPLY TO BECOME A WRITER</button> -->
+          <div class="medium-4 medium-offset-1 small-12 columns">
+            <div class="pricing-wrapper">
+            <h5>Get Traffic</h5>
+            <h3>$1</h3>
+            <p>per unique visitor</p>
+            <ul>
+              <li>Content Analytics</li>
+              <li>Audience Insights</li>
+              <li>Client Success Manager</li>
+              <li>24/7 Email and Phone Support</li>
+            </ul>
             </div>
           </div>
         </div>
@@ -240,71 +221,67 @@
       </button>
     </div>
     
-    <section class="who">
+    <section class="who gray-bg">
       <div class="row">
         <div class="small-12 columns">
           <h2 class="text-center global-title text-darker-gray">
-            Get published, get exposure, get paid
+            What can you expect
           </h2>
         </div>
         <div class="small-12 columns">
           <h3 class="text-center global-subtitle text-dark-gray secondary-font">
-            Work with the best companies to share content techies want to read about
+            Transparent ROI, Great Content, Great Traffic
           </h3>
         </div>
       </div>
       <div class="row">
-        <div class="medium-3 small-12 columns">
+        <div class="medium-4 small-12 columns text-center">
           <div class="wrapper">
-            <img src="assets/img/icons/developers.svg" alt="">
+            <img src="assets/img/icons/investment.svg" alt="">
             <h3 class="name">
-              Developers
+              Transparent ROI
             </h3>
             <p class="information secondary-font">
-              Share tutorials, think pieces, tips and guides about specific languages or development in general.
+              You'll be able to see which content is bringing you the best trafic.
             </p>
           </div>
         </div>
-        <div class="medium-3 small-12 columns">
+        <div class="medium-4 small-12 columns text-center">
           <div class="wrapper">
-            <img src="assets/img/icons/designers.svg" alt="">
+            <img src="assets/img/icons/content.svg" alt="">
             <h3 class="name">
-              UI / UX Designers
+              Great Content
             </h3>
             <p class="information secondary-font">
-              Spread your insights in the field of UI/UX and create amazing pieces that designers will love to share.
+              Your blog will be powered up with content that is proven to work with your audience.
             </p>
           </div>
         </div>
-        <div class="medium-3 small-12 columns">
+        <div class="medium-4 small-12 columns text-center">
           <div class="wrapper">
-            <img src="assets/img/icons/managers.svg" alt="">
+            <img src="assets/img/icons/traffic.svg" alt="">
             <h3 class="name">
-              Project Managers
+              Great Traffic
             </h3>
             <p class="information secondary-font">
-              Publish content that resonates among project managers and helps build better teams.
-            </p>
-          </div>
-        </div>
-        <div class="medium-3 small-12 columns">
-          <div class="wrapper">
-            <img src="assets/img/icons/tech.svg" alt="">
-            <h3 class="name">
-              Tech Enthusiasts
-            </h3>
-            <p class="information secondary-font">
-              Tech content doesn't need to be for developers only. Share pieces that tech enthusiasts will love to read about.
+              You’ll reach new audiences that matter to your brand’s vision.
             </p>
           </div>
         </div>
       </div>
     </section>
     
+    <section class="call-to-action page-wrapper">
+      <div class="row align-middle align-center">
+        <h2>Increase your traffic with Codeplace</h2>
+        <button class="hollow secondary button" data-open="modal-form" href="#">Let's talk</button>
+      </div>
+    </section>
+    
     <!-- <section class="call-to-action page-wrapper">
       <div class="row align-middle align-center">
-        <h2>Interested in working with Codeplace?</h2>
-        <button class="hollow secondary button rounded" href="#">Let's talk</button>
+        <h2>Increase your traffic with Codeplace</h2>
+        <button class="hollow secondary button" data-open="modal-form" href="#">Let's talk</button>
       </div>
     </section>
     

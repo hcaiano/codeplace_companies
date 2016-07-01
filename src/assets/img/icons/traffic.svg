@@ -1,0 +1,18 @@
+<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48"><g transform="translate(0, 0)">
+<polyline data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	12,12 8,12 4,4 12,4 " stroke-linejoin="miter"></polyline>
+<polyline data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	12,26 8,26 4,18 12,18 " stroke-linejoin="miter"></polyline>
+<polyline data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	12,40 8,40 4,32 12,32 " stroke-linejoin="miter"></polyline>
+<polyline data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	36,12 40,12 44,4 36,4 " stroke-linejoin="miter"></polyline>
+<polyline data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	36,26 40,26 44,18 36,18 " stroke-linejoin="miter"></polyline>
+<polyline data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	36,40 40,40 44,32 36,32 " stroke-linejoin="miter"></polyline>
+<rect x="12" y="2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="24" height="44" stroke-linejoin="miter"></rect>
+<circle data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="4" stroke-linejoin="miter"></circle>
+<circle data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="38" r="4" stroke-linejoin="miter"></circle>
+<circle data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="10" r="4" stroke-linejoin="miter"></circle>
+</g></svg>
