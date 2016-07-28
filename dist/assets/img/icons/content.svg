@@ -1,1 +1,8 @@
-<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g fill="none" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"><path stroke="#444" d="M2 2h18v18H2zM2 28h18v18H2z"/><path data-color="color-2" stroke="#4282ca" d="M28 6h18M28 16h18M28 32h18M28 42h18"/></g></svg>
+<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48"><g transform="translate(0, 0)">
+<rect x="2" y="2" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="18" height="18" stroke-linejoin="miter"></rect>
+<rect x="2" y="28" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="18" height="18" stroke-linejoin="miter"></rect>
+<line data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="28" y1="6" x2="46" y2="6" stroke-linejoin="miter"></line>
+<line data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="28" y1="16" x2="46" y2="16" stroke-linejoin="miter"></line>
+<line data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="28" y1="32" x2="46" y2="32" stroke-linejoin="miter"></line>
+<line data-color="color-2" fill="none" stroke="#4282ca" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="28" y1="42" x2="46" y2="42" stroke-linejoin="miter"></line>
+</g></svg>
