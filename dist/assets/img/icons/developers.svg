@@ -1,1 +1,26 @@
-<svg width="46" height="42" viewBox="0 0 46 42" xmlns="http://www.w3.org/2000/svg"><title>design-48px-outline_code-editor</title><g stroke-width="2" fill="none" fill-rule="evenodd"><path stroke="#000" d="M1 1h44v40H1zM15 1v40"/><path d="M7 9h2M7 15h2M7 21h2M7 27h2M22 9h4M26 15h5M28 21h10M26 27h5M22 33h4" stroke="#4A6CD4"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="46px" height="42px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>design-48px-outline_code-editor</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Writers" transform="translate(-153.000000, -3139.000000)" stroke-width="2">
+            <g id="design-48px-outline_code-editor" transform="translate(154.000000, 3140.000000)">
+                <g id="Group">
+                    <rect id="Rectangle-path" stroke="#000000" x="0" y="0" width="44" height="40"></rect>
+                    <path d="M14,0 L14,40" id="Shape" stroke="#000000"></path>
+                    <path d="M6,8 L8,8" id="Shape" stroke="#4A6CD4"></path>
+                    <path d="M6,14 L8,14" id="Shape" stroke="#4A6CD4"></path>
+                    <path d="M6,20 L8,20" id="Shape" stroke="#4A6CD4"></path>
+                    <path d="M6,26 L8,26" id="Shape" stroke="#4A6CD4"></path>
+                    <path d="M21,8 L25,8" id="Shape" stroke="#4A6CD4"></path>
+                    <path d="M25,14 L30,14" id="Shape" stroke="#4A6CD4"></path>
+                    <path d="M27,20 L37,20" id="Shape" stroke="#4A6CD4"></path>
+                    <path d="M25,26 L30,26" id="Shape" stroke="#4A6CD4"></path>
+                    <path d="M21,32 L25,32" id="Shape" stroke="#4A6CD4"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
